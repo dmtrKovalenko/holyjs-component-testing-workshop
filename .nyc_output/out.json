@@ -1,0 +1,53 @@
+{
+  "/Users/dmitrijkovalenko/dev/holyjs-component-testing-workshop/src/App.tsx": {
+    "path": "/Users/dmitrijkovalenko/dev/holyjs-component-testing-workshop/src/App.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 6,
+          "column": 2
+        },
+        "end": {
+          "line": 23,
+          "column": 4
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "App",
+        "decl": {
+          "start": {
+            "line": 5,
+            "column": 9
+          },
+          "end": {
+            "line": 5,
+            "column": 12
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 15
+          },
+          "end": {
+            "line": 24,
+            "column": 1
+          }
+        },
+        "line": 5
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 2
+    },
+    "f": {
+      "0": 2
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "060872e62dfebb39b667cb3d5dd2768bb3b90cf4"
+  }
+}
