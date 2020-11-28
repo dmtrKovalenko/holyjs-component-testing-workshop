@@ -31,4 +31,4 @@ workflows:
           command: |
             TESTFILES=$(circleci tests glob "cypress/integration/**/*spec.{js,jsx,ts,tsx}" | circleci tests split --total=2)
             echo "Test files for this machine are $TESTFILES"
-            npx cypress run --spec $TESTFILES
+            yarn cypress run --spec $TESTFILES
