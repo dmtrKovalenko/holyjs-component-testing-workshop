@@ -31,7 +31,7 @@ workflows:
           command: |
             TESTFILES=$(circleci tests glob "cypress/{integration,component}/**/*.spec.{js,jsx,ts,tsx}" | circleci tests split --total=2)
             echo "Test files for this machine are $TESTFILES"
-            yarn cypress run --spec $TESTFILES --reporter cypress-circleci-reporter
+            yarn percy exec -- cypress run --spec $TESTFILES --reporter cypress-circleci-reporter
           post-steps:
             - store_test_results:
                 path: test_results
