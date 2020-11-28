@@ -1,0 +1,136 @@
+{
+  "/Users/dmitrijkovalenko/dev/holyjs-component-testing-workshop/src/DatePickerInput.tsx": {
+    "path": "/Users/dmitrijkovalenko/dev/holyjs-component-testing-workshop/src/DatePickerInput.tsx",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 8,
+          "column": 28
+        },
+        "end": {
+          "line": 8,
+          "column": 61
+        }
+      },
+      "1": {
+        "start": {
+          "line": 10,
+          "column": 2
+        },
+        "end": {
+          "line": 21,
+          "column": 4
+        }
+      },
+      "2": {
+        "start": {
+          "line": 16,
+          "column": 10
+        },
+        "end": {
+          "line": 16,
+          "column": 29
+        }
+      },
+      "3": {
+        "start": {
+          "line": 18,
+          "column": 33
+        },
+        "end": {
+          "line": 18,
+          "column": 77
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "BasicDatePicker",
+        "decl": {
+          "start": {
+            "line": 7,
+            "column": 24
+          },
+          "end": {
+            "line": 7,
+            "column": 39
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 42
+          },
+          "end": {
+            "line": 22,
+            "column": 1
+          }
+        },
+        "line": 7
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 15,
+            "column": 18
+          },
+          "end": {
+            "line": 15,
+            "column": 19
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 15,
+            "column": 32
+          },
+          "end": {
+            "line": 17,
+            "column": 9
+          }
+        },
+        "line": 15
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 18,
+            "column": 21
+          },
+          "end": {
+            "line": 18,
+            "column": 22
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 33
+          },
+          "end": {
+            "line": 18,
+            "column": 77
+          }
+        },
+        "line": 18
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 21,
+      "1": 21,
+      "2": 7,
+      "3": 56
+    },
+    "f": {
+      "0": 21,
+      "1": 7,
+      "2": 56
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "fdb6cf8ffa36873d46096556b3e53c3dc905403b"
+  }
+}
