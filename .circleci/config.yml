@@ -22,9 +22,14 @@ workflows:
           # we are not going to use results from this job anywhere else
           record: false
           store_artifacts: true
+          post-steps:
+            - store_test_results:
+                path: test_results
+            - store_artifacts:
+                path: test_results
           # following examples from
           # https://circleci.com/docs/2.0/parallelism-faster-jobs/
           command: |
             TESTFILES=$(circleci tests glob "cypress/{integration,component}/**/*spec.{js,jsx,ts,tsx}" | circleci tests split --total=2)
             echo "Test files for this machine are $TESTFILES"
-            npx cypress run --spec $TESTFILES
+            npx cypress run --spec $TESTFILES --reporter cypress-circleci-reporter

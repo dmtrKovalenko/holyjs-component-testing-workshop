@@ -15,7 +15,7 @@ describe("<DatePickerInput />", () => {
     cy.get("[aria-label='next month']").click();
 
     cy.get("[aria-label='Dec 31, 2020']").click();
-    cy.get("input").should("have.value", "12/31/2020");
+    cy.get("input").should("have.value", "12/431/2020");
   });
 
   context("Keyboard navigation", () => {
