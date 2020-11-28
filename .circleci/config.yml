@@ -26,7 +26,7 @@ workflows:
           no-workspace: true
           # we are not going to use results from this job anywhere else
           record: false
-          store_artifacts: true
+          any-artifacts: true
           # following examples from
           # https://circleci.com/docs/2.0/parallelism-faster-jobs/
           command: |
