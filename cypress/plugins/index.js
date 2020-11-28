@@ -1,4 +1,5 @@
 const preprocessor = require("@cypress/react/plugins/react-scripts");
+let percyHealthCheck = require('@percy/cypress/task')
 
 /// <reference types="cypress" />
 // ***********************************************************
@@ -19,7 +20,7 @@ const preprocessor = require("@cypress/react/plugins/react-scripts");
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
-
+  on("task", percyHealthCheck);
   preprocessor(on, config);
   return config; // IMPORTANT to return the config object
 };

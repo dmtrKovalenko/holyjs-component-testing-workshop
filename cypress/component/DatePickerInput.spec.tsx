@@ -1,6 +1,7 @@
 import * as React from "react";
 import { mount } from "@cypress/react";
 import { DatePickerInput } from "../../src/DatePickerInput";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 
 describe("<DatePickerInput />", () => {
   it("renders DatePickerInput", () => {
@@ -8,6 +9,19 @@ describe("<DatePickerInput />", () => {
 
     cy.get("[aria-label='Choose date']").click();
     cy.contains("November");
+
+    cy.percySnapshot();
+  });
+
+  it("renders DatePicker in dark theme", () => {
+    mount(
+      <ThemeProvider theme={createMuiTheme({ palette: { mode: "dark" } })}>
+        <DatePickerInput />
+      </ThemeProvider>
+    );
+
+    cy.get("[aria-label='Choose date']").click();
+    cy.percySnapshot();
   });
 
   it("ensures DatePickerInput a11y", () => {

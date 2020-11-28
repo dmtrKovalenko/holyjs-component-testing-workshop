@@ -2,7 +2,12 @@
   "compilerOptions": {
     "target": "es5",
     "lib": ["es5", "dom"],
-    "types": ["cypress", "cypress-real-events", "cypress-axe"],
+    "types": [
+      "cypress",
+      "cypress-real-events",
+      "cypress-axe",
+      "@percy/cypress"
+    ],
     "jsx": "react"
   },
   "include": ["**/*.ts*"]

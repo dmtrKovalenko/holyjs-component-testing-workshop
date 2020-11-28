@@ -8,6 +8,7 @@
     "@emotion/styled": "^11.0.0",
     "@material-ui/core": "^5.0.0-alpha.17",
     "@material-ui/lab": "^5.0.0-alpha.17",
+    "@percy/cypress": "^2.3.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
