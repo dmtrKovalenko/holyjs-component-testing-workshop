@@ -22,6 +22,7 @@ workflows:
           # in this job - a do-nothing "install-command" parameter
           install-command: echo 'Nothing to install in this job'
           yarn: true
+          # do not store into workspace for the next jobs
           no-workspace: true
           # we are not going to use results from this job anywhere else
           record: false
@@ -29,6 +30,6 @@ workflows:
           # following examples from
           # https://circleci.com/docs/2.0/parallelism-faster-jobs/
           command: |
-            TESTFILES=$(circleci tests glob "cypress/integration/**/*spec.{js,jsx,ts,tsx}" | circleci tests split --total=2)
+            TESTFILES=$(circleci tests glob "cypress/{integration,component}/**/*.spec.{js,jsx,ts,tsx}" | circleci tests split --total=2)
             echo "Test files for this machine are $TESTFILES"
             yarn cypress run --spec $TESTFILES
