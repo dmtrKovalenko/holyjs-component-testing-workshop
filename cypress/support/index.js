@@ -18,3 +18,4 @@ import "./commands"; // Alternatively you can use CommonJS syntax:
 
 import "@cypress/react/support";
 import "cypress-real-events";
+import "cypress-axe"

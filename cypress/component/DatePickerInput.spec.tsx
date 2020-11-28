@@ -10,6 +10,15 @@ describe("<DatePickerInput />", () => {
     cy.contains("November");
   });
 
+  it("ensures DatePickerInput a11y", () => {
+    cy.injectAxe();
+    mount(<DatePickerInput />);
+
+    cy.get("[aria-label='Choose date']").click();
+    cy.contains("November");
+    cy.checkA11y();
+  });
+
   it("selects a date", () => {
     mount(<DatePickerInput />);
 
@@ -54,12 +63,12 @@ describe("<DatePickerInput />", () => {
       cy.realPress("Tab");
       cy.realPress("Tab");
       cy.realPress("Tab");
-  
-      cy.focused().should("have.attr", "aria-label", "next month");
-      cy.realPress(" ")
-      cy.realPress("Tab")
 
-      cy.focused().should("have.attr", "aria-label", "Dec 27, 2020")
+      cy.focused().should("have.attr", "aria-label", "next month");
+      cy.realPress(" ");
+      cy.realPress("Tab");
+
+      cy.focused().should("have.attr", "aria-label", "Dec 27, 2020");
     });
   });
 });
