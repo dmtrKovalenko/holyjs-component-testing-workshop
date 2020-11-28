@@ -1,6 +1,6 @@
 import * as React from "react";
 import TextField from "@material-ui/core/TextField";
-import AdapterDayJs from "@material-ui/lab/AdapterDayJs";
+import AdapterDayJs from "@date-io/dayjs";
 import LocalizationProvider from "@material-ui/lab/LocalizationProvider";
 import DatePicker from "@material-ui/lab/DatePicker";
 
